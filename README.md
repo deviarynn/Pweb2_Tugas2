@@ -120,7 +120,7 @@ Metode tampilData di parent class Database yang akan di implemetasikan di class 
 
 ### 4. Mambuat Class turunan menggunakan konsep pewarisan
 #### Membuat Class Pengawas yang mewarisi Class Database
-a. Definisi class Pengawas
+- Definisi class Pengawas
 
 ```php
     <?php
@@ -163,7 +163,7 @@ a. Definisi class Pengawas
     // Memanggil fungsi "tampilData" dan menyimpan hasilnya ke variabel $data.
         $dataPengawas = $pengawas->tampilData();
 ```
-b. Full Kodenya:
+- Full Kodenya:
 
 ```php
 <?php
@@ -255,7 +255,7 @@ $laporan = new LaporanLembur();
 $dataLaporan = $laporan->tampilData();
 ?>
 ```
-Script ini memuat file database.php yang berisi class Database dengan koneksi ke database. KClaselas LaporanLembur didefinisikan sebagai subclass dari Database dan mewarisi semua properti dan metode yang ada, termasuk koneksi ke database. Dalam kelas LaporanLembur, terdapat metode tampilData() yang berfungsi untuk mengambil data dari tabel laporan_kerja_lembur menggunakan perintah SQL. Hasil query disimpan dalam variabel, diolah menjadi array asosiatif, dan dikembalikan sebagai output. Di akhir script, sebuah objek dari kelas LaporanLembur dibuat, lalu metode tampilData() dipanggil untuk mengambil data dari tabel tersebut.
+Script ini memuat file database.php yang berisi class Database dengan koneksi ke database. Class LaporanLembur didefinisikan sebagai subclass dari Database dan mewarisi semua properti dan metode yang ada, termasuk koneksi ke database. Dalam kelas LaporanLembur, terdapat metode tampilData() yang berfungsi untuk mengambil data dari tabel laporan_kerja_lembur menggunakan perintah SQL. Hasil query disimpan dalam variabel, diolah menjadi array asosiatif, dan dikembalikan sebagai output. Di akhir script, sebuah objek dari kelas LaporanLembur dibuat, lalu metode tampilData() dipanggil untuk mengambil data dari tabel tersebut.
 
 
 <b>Selanjutnya, class Pengawas dan LaporanLembur juga mewariskan sifat ke sub class masing-masing, yaitu class unitKerja sebagai child class dari Pengawas(parent class), dan class Dosen sebagai child class dari LaporanLembur.</b>
@@ -563,7 +563,7 @@ $dataDosen = $dosen->tampilData('Vannya S.Pd., M.Pd., Kom');
 
 ?>
 ```
-Untuk Class per nama Dosen, tinggal menambahkan `$$dosen = new Dosen();`
+Untuk Class per nama Dosen, tinggal menambahkan `$dosen = new Dosen();`
 `$dataDosen = $dosen->tampilData('Devi Aryanii');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
 
 Polimorfisme ditunjukkan melalui metode tampilData() yang ada di class Pengawas, LaporanLembur, unitKerja, dan Dosen. 
@@ -792,8 +792,9 @@ Ketika metode tampilData() dipanggil dari objek class unitKerja, hasil yang dita
 Kode di atas menggunakan PHP untuk menampilkan semua data Penggantian Pengawas Ujian dan Laporan Lembur dalam bentuk tabel.
              
 - Hasil Output:
-![alt text](tampilAll1.png)
-![alt text](tampilAll2.png)
+![tampilAll1](https://github.com/user-attachments/assets/299cbbe7-b1b8-4f48-91d3-9f9422d96493)
+![tampilAll2](https://github.com/user-attachments/assets/9d204ff7-96d9-47ae-84c2-8cc578b43ae3)
+
 -------------------------------------------------------------------------------------------------------------------
 ### 7. Dashboard menampilkan data tabel Penggantian Pengawas Ujian dimana hanya kategori unit kerja tertentu seperti Bidang Kemahasiswaan, Bidang SAINS Akademik, dan Bidang Mechine Learning (Bootstrap dengan Navbar)
 
@@ -926,7 +927,9 @@ $dataUnit = $unitkrj->tampilData('Bidang Kemahasiswaan');
 ```
 - Berikut adalah hasil outputnya:
 
-![alt text](bidangKmhs.png)
+![bidangKmhs](https://github.com/user-attachments/assets/4ec22b28-6877-417f-ab52-6867d721350d)
+
+
 #### 2. Bidang Bidang SAINS Akademik
 - Code full:
 
@@ -1058,6 +1061,8 @@ $dataUnit = $unitkrj->tampilData('Bidang SAINS Akademik');
 ```
 
 - Berikut Hasil Outputnya:
+
+![bidangSA](https://github.com/user-attachments/assets/7ead607b-a3e2-4326-a1b2-ea676d082f5a)
 
 
 #### 3. Bidang Mechine Learning
@@ -1191,6 +1196,8 @@ $dataUnit = $unitkrj->tampilData('Bidang Mechine Learning');
 
 - Hasil Output:
 
+![bidangML](https://github.com/user-attachments/assets/9a52bd06-7d55-4c5e-aea5-86949a0c8d11)
+
 
 -----------------------------------------------------
 
@@ -1320,6 +1327,10 @@ $dataDosen = $dosen->tampilData('Devi Aryanii');
 ```
 
 - Hasil output:
+
+![dosenDevi](https://github.com/user-attachments/assets/f8d751fd-c988-4b17-830f-646f690a1e67)
+
+
 -----------------------------------------------------
 
 #### 2. Dosen Chiko Jerome
@@ -1446,6 +1457,10 @@ $dataDosen = $dosen->tampilData('Chiko Jerome');
 ```
 
 - Hasil output:
+
+![Dosen Chiko](https://github.com/user-attachments/assets/8a876732-3c08-4a1c-93cc-c11814f5cc0a)
+
+
 -----------------------------------------------------
 
 #### 3. Dosen Vannya S.Pd., M.Pd.,Kom
@@ -1572,5 +1587,8 @@ $dataDosen = $dosen->tampilData('Vannya S.Pd., M.Pd., Kom');
 ```
 
 - Hasil output:
+
+![dosenVannya](https://github.com/user-attachments/assets/246a172c-8d3e-4f54-ac4b-984e1f53110a)
+
 
 -----------------------------------------------------
