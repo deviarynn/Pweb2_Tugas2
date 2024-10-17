@@ -507,7 +507,7 @@ $dataUnit = $unitkrj->tampilData('Bidang Mechine Learning');
 ```
 
 #### Untuk Class per Bidang Unit Kerja, tinggal menambahkan `$unitkrj = new unitKerja();` 
-`$dataUnit = $unitkrj->tampilData('Bidang Kemahasiswaan');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
+#### `$dataUnit = $unitkrj->tampilData('Bidang Kemahasiswaan');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
 -----------------------------------------------------
 - Class Database->Class LaporanLembur->Class Dosen (kategori nama dosen Devi Aryanii, Chiko Jerome, dan Vannya S.Pd., M.Pd., Kom)
 
@@ -567,9 +567,9 @@ $dataDosen = $dosen->tampilData('Vannya S.Pd., M.Pd., Kom');
 ?>
 ```
 #### Untuk Class per nama Dosen, tinggal menambahkan `$dosen = new Dosen();`
-`$dataDosen = $dosen->tampilData('Devi Aryanii');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
+#### `$dataDosen = $dosen->tampilData('Devi Aryanii');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
 
-Polimorfisme ditunjukkan melalui metode tampilData() yang ada di class Pengawas, LaporanLembur, unitKerja, dan Dosen. 
+<p>Polimorfisme ditunjukkan melalui metode tampilData() yang ada di class Pengawas, LaporanLembur, unitKerja, dan Dosen. </p>p>
 
 - class unitKerja mewarisi dari class Pengawas, sehingga bisa menggunakan semua metode dari class induknya. Namun, class unitKerja menimpa (override) metode tampilData() untuk menampilkan data khusus yang hanya berisi keterangan `unit_kerja` per bidang, seperti Bidang Kemahasiswaan, Bidang SAINS Akademik, dan Bidang Mechine Learning. 
 - Sama seperti class Dosen, yang juga mewarisi dari class LaporanLembur dan menimpa metode tampilData() untuk mengambil data dengan keterangan `nama_dosen` kategori nama Devi Aryanii, Chiko Jerome, dan Vannya S.Pd., M.Pd., Kom. Jadi, meskipun ketiga class memiliki metode dengan nama yang sama, setiap class mengimplementasikan cara yang berbeda. 
