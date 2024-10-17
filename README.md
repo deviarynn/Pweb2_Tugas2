@@ -191,7 +191,7 @@ $dataPengawas = $pengawas->tampilData();
 Kelas **Pengawas** adalah subclass dari kelas **Database**, yang artinya kelas ini mewarisi semua atribut dan metode dari kelas **Database**. Dengan mekanisme pewarisan ini, **Pengawas** dapat menggunakan koneksi database yang sudah ada di kelas **Database** tanpa perlu mendefinisikannya kembali. Hal ini membantu mengatur kode dengan lebih efisien, karena fungsi yang bersifat umum ditempatkan di kelas induk, sedangkan hal-hal yang lebih spesifik ditangani oleh kelas turunannya.
 
 #### Membuat Class LaporanLembur yang mewarisi Class Database
-a. Definisi Class LaporanLembur
+- Definisi Class LaporanLembur
 
 ```php
     require_once ('Database.php');
@@ -229,7 +229,7 @@ a. Definisi Class LaporanLembur
     // Memanggil fungsi "tampilData" dan menyimpan hasilnya ke variabel $dataLaporan.
     $dataLaporan = $laporan->tampilData();
 ```
-b. Full Kodenya:
+- Full Kodenya:
 
 ```php
 <?php
@@ -257,6 +257,7 @@ $dataLaporan = $laporan->tampilData();
 ```
 Script ini memuat file database.php yang berisi class Database dengan koneksi ke database. Class LaporanLembur didefinisikan sebagai subclass dari Database dan mewarisi semua properti dan metode yang ada, termasuk koneksi ke database. Dalam kelas LaporanLembur, terdapat metode tampilData() yang berfungsi untuk mengambil data dari tabel laporan_kerja_lembur menggunakan perintah SQL. Hasil query disimpan dalam variabel, diolah menjadi array asosiatif, dan dikembalikan sebagai output. Di akhir script, sebuah objek dari kelas LaporanLembur dibuat, lalu metode tampilData() dipanggil untuk mengambil data dari tabel tersebut.
 
+-------
 
 <b>Selanjutnya, class Pengawas dan LaporanLembur juga mewariskan sifat ke sub class masing-masing, yaitu class unitKerja sebagai child class dari Pengawas(parent class), dan class Dosen sebagai child class dari LaporanLembur.</b>
 
