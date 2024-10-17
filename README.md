@@ -505,7 +505,8 @@ $unitkrj = new unitKerja();
 $dataUnit = $unitkrj->tampilData('Bidang Mechine Learning');
 
 ```
-Untuk Class per Bidang Unit Kerja, tinggal menambahkan `$unitkrj = new unitKerja();`
+
+#### Untuk Class per Bidang Unit Kerja, tinggal menambahkan `$unitkrj = new unitKerja();` 
 `$dataUnit = $unitkrj->tampilData('Bidang Kemahasiswaan');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
 -----------------------------------------------------
 - Class Database->Class LaporanLembur->Class Dosen (kategori nama dosen Devi Aryanii, Chiko Jerome, dan Vannya S.Pd., M.Pd., Kom)
@@ -565,7 +566,7 @@ $dataDosen = $dosen->tampilData('Vannya S.Pd., M.Pd., Kom');
 
 ?>
 ```
-Untuk Class per nama Dosen, tinggal menambahkan `$dosen = new Dosen();`
+#### Untuk Class per nama Dosen, tinggal menambahkan `$dosen = new Dosen();`
 `$dataDosen = $dosen->tampilData('Devi Aryanii');` (sesuaikan dengan bidang masing-masing). Letakan kode tsb di file perkategori digabung dengan kode html-nya.
 
 Polimorfisme ditunjukkan melalui metode tampilData() yang ada di class Pengawas, LaporanLembur, unitKerja, dan Dosen. 
