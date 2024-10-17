@@ -120,7 +120,7 @@ Metode tampilData di parent class Database yang akan di implemetasikan di class 
 
 ### 4. Mambuat Class turunan menggunakan konsep pewarisan
 #### Membuat Class Pengawas yang mewarisi Class Database
-- Definisi class Pengawas
+Definisi class Pengawas
 
 ```php
     <?php
@@ -163,7 +163,8 @@ Metode tampilData di parent class Database yang akan di implemetasikan di class 
     // Memanggil fungsi "tampilData" dan menyimpan hasilnya ke variabel $data.
         $dataPengawas = $pengawas->tampilData();
 ```
-- Full Kodenya:
+
+Full Kodenya:
 
 ```php
 <?php
@@ -191,7 +192,7 @@ $dataPengawas = $pengawas->tampilData();
 Kelas **Pengawas** adalah subclass dari kelas **Database**, yang artinya kelas ini mewarisi semua atribut dan metode dari kelas **Database**. Dengan mekanisme pewarisan ini, **Pengawas** dapat menggunakan koneksi database yang sudah ada di kelas **Database** tanpa perlu mendefinisikannya kembali. Hal ini membantu mengatur kode dengan lebih efisien, karena fungsi yang bersifat umum ditempatkan di kelas induk, sedangkan hal-hal yang lebih spesifik ditangani oleh kelas turunannya.
 
 #### Membuat Class LaporanLembur yang mewarisi Class Database
-- Definisi Class LaporanLembur
+Definisi Class LaporanLembur
 
 ```php
     require_once ('Database.php');
