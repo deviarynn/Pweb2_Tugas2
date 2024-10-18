@@ -798,6 +798,7 @@ Kode di atas menggunakan PHP untuk menampilkan semua data Penggantian Pengawas U
 ![tampilAll1](https://github.com/user-attachments/assets/299cbbe7-b1b8-4f48-91d3-9f9422d96493)
 ![tampilAll2](https://github.com/user-attachments/assets/9d204ff7-96d9-47ae-84c2-8cc578b43ae3)
 
+Agar lebih jelas bisa cek di link <a href="http://localhost/web2/UTS/PWEB2_Tugas2/tampilAll.php">Tampil Semua Data</a>
 -------------------------------------------------------------------------------------------------------------------
 ### 7. Dashboard menampilkan data tabel Penggantian Pengawas Ujian dimana hanya kategori unit kerja tertentu seperti Bidang Kemahasiswaan, Bidang SAINS Akademik, dan Bidang Mechine Learning (Bootstrap dengan Navbar)
 
